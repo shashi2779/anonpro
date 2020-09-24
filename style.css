@@ -1,0 +1,435 @@
+@font-face{
+    font-family: "monumentBld";
+    src: url('./monumentextended-ultrabold.otf');
+}
+
+@font-face{
+    font-family: "monumentReg";
+    src: url('./MonumentExtended-Regular.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monumentBld;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#fnav{
+    display: none;
+}
+#back{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: tomato; */
+    padding: 30px 50px;
+}
+#main{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background-color: white;
+    
+}
+#nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    /* padding: 0 20px; */
+    
+}
+#leftnav{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+   
+}
+#leftnav h4{
+    font-size: 14px;
+}
+#leftnav a{
+
+    margin-left:50px;
+    color: black;
+    text-decoration: none;
+    font-size: 9px;
+}
+#line{
+    width: 200px;
+    height: 1px;
+    background-color: black;
+    margin: 0 0 0 50px;
+}
+#nav #rightnav i{
+    margin-left: 20px;
+}
+#sidelinks{
+    position:absolute;
+    bottom: 120px;
+    left: 10px;
+    display: flex;
+    justify-content: space-between;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+#sidelinks a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 6px;
+    font-weight: 600;
+    letter-spacing: 7.5px;
+}
+.sidelink{
+    margin-left: 40px;
+}
+#newtexttype{
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+     /* width: 70%;
+    height: 150px;
+    background-color: rgb(146, 146, 228);  */
+}
+#newtexttype h4{
+    position: absolute;
+    bottom: 55px;
+    left: -1px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+#newtexttype h1{
+    /* position: absolute; */
+    bottom: 0;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 1.5px;
+    font-size: 90px;
+}
+#newtextlne{
+    position: absolute;
+    left: 45px;
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    transform-origin: left;
+    transform: rotate(-90deg);
+    /* background-color: red; */
+}
+.line{
+   width: 70px;
+   height: 1.5px;
+   background-color: black;
+}
+
+#newtextlne h3{
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    font-weight: 550;
+}
+#newfashion{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 21%;
+    left: 18%;
+    width: 200px;
+    height: 240px;
+    /* background-color: royalblue; */
+}
+#linement{
+    position: absolute;
+     top: 1.5px ;
+     left: 15px;
+    width:240px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  /* background-color: rgba(128, 255, 0, 0.164); */
+  transform-origin: 0% 0%;
+  transform: rotate(90deg);
+}
+#linement h4{
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+.line2{
+    width: 120px;
+    height: 1px;
+    background-color: black;
+}
+#fashionpic{
+    position: absolute;
+    left: 20px;
+    width:180px;
+    height: 240px;
+    /* background-color: brown; */
+    background-image: url(https://images.unsplash.com/photo-1507007952078-91d7c6928e5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80);
+    background-position: center;
+    background-size: cover;
+}
+#trends{
+    position: absolute;
+    top: 22%;
+    left: 43%;
+    width: 400px;
+    height: 190px;
+    /* background-color: chocolate; */
+}
+#trends h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+#trends p{
+    width: 330px;
+    font-size: 7px;
+    opacity: .8;
+    line-height: 12px;
+}
+#circlebtn{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    width: 65px;
+    height: 65px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#circlebtn h4{
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    text-transform: uppercase;
+     transform-origin: left; 
+    transform: rotate(-30deg);
+    position: absolute;
+    font-size: 12px;
+
+}
+#blocks{
+    position: absolute;
+    top: 17%;
+    right: -50px;
+    width: 300px;
+    height: 320px;
+    background-color: red;
+}
+#block1{
+    width: 100%;
+    height: 20%;
+    background-color: #223344;
+}
+#block2{
+    width: 100%;
+    height: 80%;
+    background-color: #f35566;
+}
+#blocks img{
+    position: absolute;
+    width: 360px;
+    top: 32%;
+    left: -70%;
+
+}
+#menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    #fnav{
+        display: initial;
+        position: fixed;
+         top: 0;
+         left: -100%; 
+        width: 100%;
+        height: 100%;
+        z-index: 999999999;
+         background-color: rgb(238, 238,238); 
+        background-color: #f3f3f3;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+      }
+      #flinks {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          /* background-color: lawngreen; */
+      }
+      #flinks a{
+          text-decoration: none;
+          color: #121d12;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          margin-top: 15px;
+          text-transform: uppercase;
+          
+      }
+      #flinks a:nth-child(1){
+          margin-top: 0px;
+      }
+      #fnavline{
+          width: 2px;
+          height: 100px;
+          background-color: #263826;
+          margin-left: 10px;
+          margin-top: 15px;
+      }
+      #fclosediv{
+          display: flex;
+          align-items: center;
+          position: absolute;
+          bottom: 20%;
+          left: 50%;
+          /* background-color: lawngreen; */
+      }
+      #fclosediv h4{
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1.3px;
+     }
+      #fclosediv i{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 35px;
+         height: 35px;
+         border-radius: 50%;
+         color: #fff;
+         margin-left: 10px;
+         background-color:rgb(255, 104,104);
+         box-shadow: 0px 5px 30px rgb(255, 104, 104);
+
+      }
+    #back{
+        padding:20px 10px ;
+    }
+    #main{
+        min-height: 90vh;
+    }
+    #leftnav a{
+         display: none;
+    }
+    #leftnav #line{
+        display: none;
+    }
+    #menu{
+        display: initial;
+    }
+   #rightnav i{
+       font-size: 13px;
+   }
+   #sidelinks{
+       bottom: 200px;
+   }
+   #sidelinks a{
+        font-size: 6px;
+        letter-spacing: 6.5px;
+   }
+   .sidelink{
+       margin-left: 35px;
+   }
+   #newtexttype{
+    bottom: -53;
+   }
+   #newtexttype h1{
+       font-size: 42px;
+   }
+   #newtexttype h4{
+    font-size: 22.5px;
+    /* font-weight: 600; */
+    bottom: 27.5px;
+   }
+  #newtextlne{
+      bottom: 65px;
+      left: 22px;
+   }
+   #newtexttype #newtextlne .line{
+      width: 50px;
+   }
+  #trends{
+      top: 63.5%;
+      left: 21.5%;
+      width: 252px;
+      height: 100px;
+   }
+  #trends h1{
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  #trends p{
+    width: 240px;
+    font-size: 5.5px;
+    font-weight: 200;
+    line-height: 15px;
+
+  }
+  #newfashion{
+    width: 272px;
+    height: 300px;
+    top: 16%;
+    left: 20%;
+  }
+  .line2{
+      width: 60%;
+  }
+  #fashionpic{
+    width: 245px;
+    height: 300px;
+  }
+  #linement {
+    width: 300px;
+  }
+  #circlebtn{
+    display: none;
+  }
+  #blocks{
+    top: 100%;
+    right: -15px;
+    width: 230px;
+    height: 290px;
+  }
+  #blocks img{
+    top: 30%;
+    left: -35%;
+    width: 270px;
+  }
+
+}
